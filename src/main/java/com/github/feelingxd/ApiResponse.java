@@ -61,7 +61,7 @@ public class ApiResponse<T> {
     }
 
     public <T> ResponseEntity<ApiResponse<T>> toEntity() {
-      return ResponseEntity.status(this.code.getStatus()).body(new ApiResponse<>(code, (T) data));
+      return ResponseEntity.status(this.code.getStatus().value()).body(new ApiResponse<>(code, (T) data));
     }
 
     public String toString() {
