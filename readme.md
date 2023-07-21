@@ -37,19 +37,17 @@ ApiResponse의 형태는 다음과 같습니다.
         private String code;
         private HttpStatus status;
         private String msg;
-        private T data;
+        private T data; // data는 옵션이며 전해줄 데이터 가 있을경우 사용합니다.
     }
 ```
 
-
+#### json Response
 ```json
-//json 응답 형태
-
 {
     code: "{CODE_NAME}",
     status: "{HTTP_STATUS}",
     msg: "{MSG}",
-    data: "{DATA}" //OPTIONAL
+    data: "{DATA}"
 }
 
 ```
@@ -96,8 +94,6 @@ public class Example {
     .build() // ApiResponse class
   }
 }
-
-
 ```
 
 
@@ -115,14 +111,13 @@ public class testController {
   }
 }
 ```
-
+#### Expect json
 ```json
-// expected json response
 {
     code: "EXAMPLE_ERROR_CODE",
     status: "400",
     msg: "테스트 에러코드입니다. xD",
-    data: null //OPTIONAL
+    data: null 
 }
 
 ```
