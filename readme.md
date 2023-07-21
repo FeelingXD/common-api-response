@@ -42,7 +42,7 @@ ApiResponse의 형태는 다음과 같습니다.
 ```
 
 #### json Response
-```json
+```jsonc
 {
     code: "{CODE_NAME}",
     status: "{HTTP_STATUS}",
@@ -112,7 +112,7 @@ public class testController {
 }
 ```
 #### Expect json
-```json
+```jsonc
 {
     code: "EXAMPLE_ERROR_CODE",
     status: "400",
