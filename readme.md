@@ -2,7 +2,7 @@
 
 ## Purpose ✨
 
-이 라이브러리는 rest api 에서 일관적 으로 공통된 response를 보장하기위해 작성한 라이브러리 입니다.
+이 라이브러리는 ResponseEntity 응답시 일관된 포맷을 제공하기위해 제작된 라이브러리입니다. 🐢
 
 ## How to use? 🤔
 
